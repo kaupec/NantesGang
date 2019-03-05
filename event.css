@@ -1,0 +1,25 @@
+/***HEADER***/
+.logo {
+    width: 4em;
+}
+
+/***EVENT***/
+.card-img-top {
+    transition: transform .2s;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
+  }
+
+/***MAP***/
+#map{
+    height:623px;
+}
+
+
+/***FOOTER***/
+.julien {
+    display: flex;
+    justify-content: space-evenly
+}
