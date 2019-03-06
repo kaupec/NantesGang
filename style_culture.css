@@ -1,0 +1,44 @@
+body {
+    background-image:url(http://mddp.ch/wp-content/uploads/2017/10/Background_Blanc.jpg);
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    width: 100%;
+}
+
+.logo{
+    width: 4em;
+}
+
+.nono
+{
+    display: flex;
+    justify-content: space-around;
+    border: none;
+}
+
+.card-img-top{
+    opacity:0.3;
+}
+
+.card-img-top:hover{
+    opacity:1;
+}
+
+footer{
+    position:relative;
+    bottom:0;
+    width: 100%;
+}
+
+.fab{
+    color:yellow;
+}
+
+.footer_text{
+    color:lightyellow;
+}
+
+.julien{
+    display:flex;
+    justify-content: space-evenly;
+}
