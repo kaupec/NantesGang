@@ -1,0 +1,44 @@
+.logo 
+{
+    width: 4em
+}
+.active{
+    font-weight:700;
+}
+.bg{
+    background-image:url(https://blogrecherche.wp.imt.fr/files/2018/03/ile-de-nantes.jpg);
+    background-color:;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    width: 100%;
+    height: 20em;
+}
+.bg1{
+    background-image:url(https://blogrecherche.wp.imt.fr/files/2018/03/ile-de-nantes.jpg);
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    width: 100%;
+    height: 20em;
+}
+.text2{
+    float:center ;
+    text-align:center;
+    font-family: "Verdana";
+}
+
+.btn{
+    margin-top: 2em;
+}
+.jumbotron{
+    margin-bottom: 0em;
+}
+.julien {
+    display: flex;
+    justify-content: space-evenly
+}
+.fab{
+    color:yellow;
+}
+.footer_text{
+    color:lightyellow;
+}
