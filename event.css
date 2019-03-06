@@ -3,6 +3,11 @@
     width: 4em;
 }
 
+.active {
+    font-weight: 700;
+    color: yellow !important;
+}
+
 /***EVENT***/
 .card-img-top {
     transition: transform .2s;
@@ -17,9 +22,20 @@
     height:623px;
 }
 
+@media screen and (min-width:992px) {
+    .jumbotron {height: 623px}
+}
 
 /***FOOTER***/
 .julien {
     display: flex;
     justify-content: space-evenly
+}
+
+.fab {
+    color: yellow;
+}
+
+.footer_text {
+    color: lightyellow;
 }
