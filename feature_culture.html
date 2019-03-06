@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8" />
+    <title>NantesGang</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style_culture.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <img src="https://nsa40.casimages.com/img/2019/03/04/mini_190304043544902198.png" alt="logo" class="logo" />
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#homePage">HomePage <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#events">Events</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#cuture">Culture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#artists">Artists</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <ul class="nav nav-pills nono mt-5 mb-5" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active btn btn-outline-secondary mt-2" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                    role="tab" aria-selected="true">
+                    <h3 onclick="togglehist()">Histoire</h3>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn btn-outline-secondary mt-2" id="pills-profile-tab" data-toggle="pill"
+                    href="#pills-profile" role="tab" aria-selected="true">
+                    <h3 onclick="togglebiere()">Petite Bière ?</h3>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn btn-outline-secondary mt-2" id="pills-contact-tab" data-toggle="pill"
+                    href="#pills-contact" role="tab" aria-selected="true">
+                    <h3 onclick="togglenumer()">Numérique</h3>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="bg">
+
+    </div>
+    <div class="container-fluid">
+        <div class="row mt-5" id="hist">
+            <div class="col-md-5 offset-md-2 mx-auto">
+                <img src="http://www.infobretagne.com/images/nantes-ville.jpg" class="card-img-top" alt="ballec">
+                <div class="card-body histo">
+                    <h5 class="card-title mx-auto">Culture historique</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Il y a très longtemps</small></p>
+                </div>
+            </div>
+            <div class="col-md-5 offset-md-2 mx-auto mt-3">
+                <img src="https://www.nantes.fr/files/live/sites/nantesfr/files/Images/01-ANEPA/Les-grands-dossiers/Decouvrir%20Nantes/histoire-port-13-758.jpg"
+                    class="card-img-top" alt="ballec">
+                <div class="card-body histo">
+                    <h5 class="card-title mx-auto">Culture historique</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Il y a très longtemps</small></p>
+                </div>
+            </div>
+            <div class="col-md-5 offset-md-2 mx-auto mt-3">
+                <img src="https://www.presseocean.fr/sites/presseocean.fr/files/imagecache/detail/2014/07/20/gggggggggoo-280323.jpg"
+                    class="card-img-top" alt="ballec">
+                <div class="card-body histo">
+                    <h5 class="card-title mx-auto">Culture historique</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Il y a très longtemps</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5" id="biere" hidden>
+        <div class="col-md-5 offset-md-2 mx-auto">
+            <img src="https://www.lyonresto.com/contenu/bandeau/rue_merciere.jpg" class="card-img-top" alt="ballec">
+            <div class="card-body ">
+                <h5 class="card-title">Culture de la bonne bieras</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Il y a longtemps</small></p>
+            </div>
+        </div>
+        <div class="col-md-5 offset-md-2 mx-auto mt-3">
+            <img src="https://p4.storage.canalblog.com/46/25/1192811/115415142.jpeg" class="card-img-top" alt="ballec">
+            <div class="card-body">
+                <h5 class="card-title">Culture de la bonne bieras</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Il y a longtemps</small></p>
+            </div>
+        </div>
+        <div class="col-md-5 offset-md-2 mx-auto mt-3">
+            <img src="https://cache.20minutes.fr/photos/2013/05/18/nantes-17052013-equipe-7371-diaporama.jpg" class="card-img-top"
+                alt="ballec">
+            <div class="card-body">
+                <h5 class="card-title">Culture de la bonne bieras</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Il y a longtemps</small></p>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5" id="numer" hidden>
+        <div class="col-md-5 offset-md-2 mx-auto">
+            <img src="https://www.channelnews.fr/wp-content/uploads/2016/11/Cantine-Numerique-Nantes.jpg"
+                class="card-img-top" alt="ballec">
+            <div class="card-body">
+                <h5 class="card-title">Nantes : La nouvelle Silicone Valley</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Il y a pas longtemps</small></p>
+            </div>
+        </div>
+        <div class="col-md-5 offset-md-2 mx-auto mt-3">
+            <img src="https://iutnantes.univ-nantes.fr/medias/photo/2894-01_1538473431710-JPG?ID_FICHE=396723"
+                class="card-img-top" alt="ballec">
+            <div class="card-body ">
+                <h5 class="card-title">Nantes : La nouvelle Silicone Valley</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Il y a pas longtemps</small></p>
+            </div>
+        </div>
+        <div class="col-md-5 offset-md-2 mx-auto mt-3">
+            <img src="http://www.nantesdigitalweek.com/wp-content/uploads/2018/06/64-Num%C3%A9rique-en-communs-les-rencontres-nationales-de-la-m%C3%A9diation-num%C3%A9rique.jpg"
+                class="card-img-top" alt="ballec">
+            <div class="card-body">
+                <h5 class="card-title">Nantes : La nouvelle Silicone Valley</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Il y a pas longtemps</small></p>
+            </div>
+        </div>
+
+    </div>
+    <footer class="page-footer font-small stylish-color-dark pt-4 bg-dark mt-5" id="footer">
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center julien">
+            <li class="list-inline-item">
+                <a href="#" class="btn-floating btn-fb mx-1">
+                    <i class="fab fa-2x fa-facebook"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#" class="btn-floating btn-tw mx-1">
+                    <i class="fab fa-2x fa-twitter"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#" class="btn-floating btn-instagram mx-1">
+                    <i class="fab fa-2x fa-instagram"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#" class="btn-floating btn-li mx-1">
+                    <i class="fab fa-2x fa-linkedin-in"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#" class="btn-floating btn-dribbble mx-1">
+                    <i class="fab fa-2x fa-snapchat"> </i>
+                </a>
+            </li>
+        </ul>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 footer_text">© 2019 Copyright:
+            <a href="../index.html" class="footer_text"> Jawn.ru</a>
+        </div>
+    </footer>
+
+    <script src="script_culture.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
