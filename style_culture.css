@@ -1,5 +1,5 @@
 body {
-    background-image:url(http://mddp.ch/wp-content/uploads/2017/10/Background_Blanc.jpg);
+    background-image:url(https://mouhassabati-online.com/wp-content/uploads/2014/12/Parallax-Background-Light-13.jpg);
     background-repeat:no-repeat;
     background-attachment:fixed;
     width: 100%;
@@ -17,7 +17,7 @@ body {
 }
 
 .card-img-top{
-    opacity:0.3;
+    opacity:0.5;
 }
 
 .card-img-top:hover{
