@@ -1,6 +1,12 @@
 .logo {
     width: 4em
 }
+
+.active {
+    font-weight: 700;
+    color: yellow !important;
+}
+
 .bg{
     background-image:url(https://blogrecherche.wp.imt.fr/files/2018/03/ile-de-nantes.jpg);
     background-color:;
@@ -26,11 +32,12 @@
 .card_gallery {
     margin:auto;
     transition:1s all;
-    margin-bottom:6em;
+    margin-bottom:4em;
 }
    
 .card_gallery:hover{
     transform:scale(2);
+    z-index: 1;
     & + .underlay{   
   }
 }  
