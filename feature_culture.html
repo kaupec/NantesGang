@@ -45,124 +45,68 @@
     <div class="container-fluid">
         <ul class="nav nav-pills nono mt-5 mb-5" id="pills-tab" role="tablist">
             <li class="nav-item" onclick="togglehist()">
-                <a class="nav-link active btn btn-outline-dark mt-2" id="pills-home-tab" data-toggle="pill" href="#pills-home"
-                    role="tab" aria-selected="true">
-                    <h3>Histoire</h3>
+                <a class="nav-link active btn btn-outline-dark rounded-pill" id="pills-home-tab" data-toggle="pill"
+                    href="#pills-home" role="tab" aria-selected="true">
+                    <h5 class="mb-0">Histoire</h5>
                 </a>
             </li>
             <li class="nav-item" onclick="togglebiere()">
-                <a class="nav-link btn btn-outline-dark mt-2" id="pills-profile-tab" data-toggle="pill"
+                <a class="nav-link btn btn-outline-dark rounded-pill" id="pills-profile-tab" data-toggle="pill"
                     href="#pills-profile" role="tab" aria-selected="true">
-                    <h3>Petite Bière ?</h3>
+                    <h5 class="mb-0">Petite Bière ?</h5>
                 </a>
             </li>
             <li class="nav-item" onclick="togglenumer()">
-                <a class="nav-link btn btn-outline-dark mt-2" id="pills-contact-tab" data-toggle="pill"
+                <a class="nav-link btn btn-outline-dark rounded-pill" id="pills-contact-tab" data-toggle="pill"
                     href="#pills-contact" role="tab" aria-selected="true">
-                    <h3>Numérique</h3>
+                    <h5 class="mb-0">Numérique</h5>
                 </a>
             </li>
         </ul>
     </div>
-    <div class="bg">
-
+    <div class="container-fluid">
+        <div class="row" id="hist">
+            <div class="mb-5">
+                <img src="https://www.livet-histoire.fr/IMG/jpg/pompes_a_vapeur_place_Graslin_Nantes_debut_XIXeme_phototheque_Musee_Sapeurs_Pompiers_Loire_Atlantique.jpg"
+                    class="card-img-top" alt="ballec">
+            </div>
+            <div class="card-body histo mt-5 mb-5 col-md-5 col-sm-5 offset-md-2 mx-auto">
+                <h5 class="card-title mx-auto">Culture historique</h5>
+                <p class="card-text">"This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer".</p>
+                <p class="card-text"><small class="text-muted">Il y a très longtemps</small></p>
+            </div>
+        </div>
     </div>
     <div class="container-fluid">
-        <div class="row mt-5" id="hist">
-            <div class="col-md-5 offset-md-2 mx-auto">
-                <img src="http://www.infobretagne.com/images/nantes-ville.jpg" class="card-img-top" alt="ballec">
-                <div class="card-body histo">
-                    <h5 class="card-title mx-auto">Culture historique</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Il y a très longtemps</small></p>
-                </div>
-            </div>
-            <div class="col-md-5 offset-md-2 mx-auto mt-3">
-                <img src="https://www.nantes.fr/files/live/sites/nantesfr/files/Images/01-ANEPA/Les-grands-dossiers/Decouvrir%20Nantes/histoire-port-13-758.jpg"
+        <div class="row mt-5" id="biere" hidden>
+            <div class="mt-5 mb-5">
+                <img src="https://www.bigcitylife.fr/wp-content/uploads/2018/06/fdlm.jpg"
                     class="card-img-top" alt="ballec">
-                <div class="card-body histo">
-                    <h5 class="card-title mx-auto">Culture historique</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Il y a très longtemps</small></p>
-                </div>
             </div>
-            <div class="col-md-5 offset-md-2 mx-auto mt-3">
-                <img src="https://www.presseocean.fr/sites/presseocean.fr/files/imagecache/detail/2014/07/20/gggggggggoo-280323.jpg"
-                    class="card-img-top" alt="ballec">
-                <div class="card-body histo">
-                    <h5 class="card-title mx-auto">Culture historique</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Il y a très longtemps</small></p>
-                </div>
+            <div class="card-body histo mt-5 mb-5 col-md-5 col-sm-5 offset-md-2 mx-auto">
+                <h5 class="card-title mx-auto">Fête</h5>
+                <p class="card-text">"This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer".</p>
+                <p class="card-text"><small class="text-muted">Il y a pas longtemps</small></p>
             </div>
         </div>
     </div>
 
-    <div class="row mt-5" id="biere" hidden>
-        <div class="col-md-5 offset-md-2 mx-auto">
-            <img src="https://www.lyonresto.com/contenu/bandeau/rue_merciere.jpg" class="card-img-top" alt="ballec">
-            <div class="card-body ">
-                <h5 class="card-title">Culture de la bonne bieras</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Il y a longtemps</small></p>
+    <div class="container-fluid">
+        <div class="row mt-5" id="numer" hidden>
+            <div class="mt-5 mb-5">
+                <img src="https://wildcodeschool.fr/wp-content/uploads/2018/04/quartier_de_la_creation-_septembre_2014-_nantes_loire-atlantique_c_mg_design-samoa.jpg"
+                    class="card-img-top" alt="ballec">
             </div>
-        </div>
-        <div class="col-md-5 offset-md-2 mx-auto mt-3">
-            <img src="https://p4.storage.canalblog.com/46/25/1192811/115415142.jpeg" class="card-img-top" alt="ballec">
-            <div class="card-body">
-                <h5 class="card-title">Culture de la bonne bieras</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Il y a longtemps</small></p>
+            <div class="card-body histo mt-5 mb-5 col-md-5 col-sm-5 offset-md-2 mx-auto">
+                <h5 class="card-title mx-auto">Nantes, la nouvelle Silicone Valley ?</h5>
+                <p class="card-text">"This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer".</p>
+                <p class="card-text"><small class="text-muted">Recemment</small></p>
             </div>
-        </div>
-        <div class="col-md-5 offset-md-2 mx-auto mt-3">
-            <img src="https://cache.20minutes.fr/photos/2013/05/18/nantes-17052013-equipe-7371-diaporama.jpg" class="card-img-top"
-                alt="ballec">
-            <div class="card-body">
-                <h5 class="card-title">Culture de la bonne bieras</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Il y a longtemps</small></p>
-            </div>
-        </div>
-    </div>
-    <div class="row mt-5" id="numer" hidden>
-        <div class="col-md-5 offset-md-2 mx-auto">
-            <img src="https://www.channelnews.fr/wp-content/uploads/2016/11/Cantine-Numerique-Nantes.jpg"
-                class="card-img-top" alt="ballec">
-            <div class="card-body">
-                <h5 class="card-title">Nantes : La nouvelle Silicone Valley</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Il y a pas longtemps</small></p>
-            </div>
-        </div>
-        <div class="col-md-5 offset-md-2 mx-auto mt-3">
-            <img src="https://iutnantes.univ-nantes.fr/medias/photo/2894-01_1538473431710-JPG?ID_FICHE=396723"
-                class="card-img-top" alt="ballec">
-            <div class="card-body ">
-                <h5 class="card-title">Nantes : La nouvelle Silicone Valley</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Il y a pas longtemps</small></p>
-            </div>
-        </div>
-        <div class="col-md-5 offset-md-2 mx-auto mt-3">
-            <img src="http://www.nantesdigitalweek.com/wp-content/uploads/2018/06/64-Num%C3%A9rique-en-communs-les-rencontres-nationales-de-la-m%C3%A9diation-num%C3%A9rique.jpg"
-                class="card-img-top" alt="ballec">
-            <div class="card-body">
-                <h5 class="card-title">Nantes : La nouvelle Silicone Valley</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Il y a pas longtemps</small></p>
-            </div>
-        </div>
 
+        </div>
     </div>
     <footer class="page-footer font-small stylish-color-dark pt-4 bg-dark mt-5" id="footer">
         <!-- Social buttons -->
