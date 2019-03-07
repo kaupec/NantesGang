@@ -3,6 +3,11 @@
     width: 4em;
 }
 
+.active {
+    font-weight: 700;
+    color: yellow !important;
+}
+
 .nono
 {
     display: flex;

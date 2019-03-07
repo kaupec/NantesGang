@@ -26,6 +26,10 @@
     .jumbotron {height: 623px}
 }
 
+.btn {
+    color: #e6e601;
+}
+
 /***FOOTER***/
 .julien {
     display: flex;
