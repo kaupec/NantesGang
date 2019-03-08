@@ -1,3 +1,5 @@
+/*NAVBAR*/
+
 .logo {
     width: 4em
 }
@@ -7,14 +9,9 @@
     color: yellow !important;
 }
 
-.bg{
-    background-image:url(https://blogrecherche.wp.imt.fr/files/2018/03/ile-de-nantes.jpg);
-    background-color:;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-    width: 100%;
-    height: 20em;
-}
+
+/* TEXTE AU DESSUS MOSAIQUE*/
+
 .texte1{
     margin-top: 5em;
     margin-bottom:5em; 
@@ -25,29 +22,70 @@
     margin-top: 5em;
 }
 
-.active{
-    font-weight:700;
-}
+
+/*GALLERY*/
 
 .card_gallery {
     margin:auto;
     transition:1s all;
     margin-bottom:4em;
 }
-   
+ 
 .card_gallery:hover{
-    transform:scale(2);
+    transform:scale(1.6);
     z-index: 1;
-    & + .underlay{   
-  }
 }  
-.julien {
-    display: flex;
-    justify-content: space-evenly;
+/* INSTAGRAM */
+
+.insta_artiste{
+    width:60%;
+    margin-bottom: 4em;
 }
-.fab{
-    color:yellow;
+.instagram{
+    background-color: #e6e601;
 }
-.footer_text{
-    color:lightyellow;
+
+/*FOOTER*/
+
+.gap_logo {display: flex;justify-content: space-evenly
+}
+.fab, .footer_text {color: lightyellow;transition: .4s ease-in-out;
+}
+.fab:hover {color: yellow
+}
+
+/*GALERIE PHOTO JS*/
+
+.Galerie{
+    margin:20px;
+    padding:0;
+    background:#fff;
+}
+
+.container{
+    max-width: 760px;
+    margin:auto;
+    border:#fff solid 3px;
+    background:#fff;
+}
+.main-img img, .imgs img { 
+    width: 100%;
+}
+.imgs{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 5px;
+    grid-gap: 5px;
+}
+
+/* effet flash*/
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+.fade-in{
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in 1 forwards;
 }
