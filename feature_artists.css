@@ -89,3 +89,26 @@
     opacity: 0;
     animation: fadeIn 0.5s ease-in 1 forwards;
 }
+
+/***TOPBUTTON***/
+#myBtn 
+{
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#myBtn:hover 
+{
+    background-color: #555;
+}
