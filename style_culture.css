@@ -38,3 +38,17 @@ footer{
     border-left:5px solid yellow;
     border-right-width: 50px;
 }
+.TopFooter {
+    margin-top: 50px
+}
+.gap_logo {
+    display: flex;
+    justify-content: space-evenly
+}
+.fab {
+    color: lightyellow;
+    transition: .4s ease-in-out;
+}
+    
+.fab:hover {
+    color: yellow}
