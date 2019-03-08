@@ -43,18 +43,20 @@ h5 {
     margin-top: 50px;
 }
 
-.TopFooter {
-    margin-top: 50px;
-}
-
-.julien {
+.gap_logo {
     display: flex;
     justify-content: space-evenly;
 }
 
 .fab {
-    color: yellow
+    color: lightyellow;
+    transition: .4s ease-in-out;
 }
+
+.fab:hover {
+    color: yellow;
+}
+
 
 @media screen and (max-width: 450px) {
     h2 {font-size: 6vw}

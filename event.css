@@ -31,15 +31,16 @@
 }
 
 /***FOOTER***/
-.julien {
+.gap_logo {
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-evenly;
 }
 
 .fab {
-    color: yellow;
+    color: lightyellow;
+    transition: .4s ease-in-out;
 }
 
-.footer_text {
-    color: lightyellow;
+.fab:hover {
+    color: yellow;
 }
