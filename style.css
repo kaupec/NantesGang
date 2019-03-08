@@ -13,7 +13,7 @@ body {
     color: yellow !important;
 }
 
-.extract_event .navbarsection {
+.extract_event .title-section {
     margin-top: 850px;
 }
 
@@ -48,15 +48,14 @@ body {
 }
 
 /***FOOTER***/
-.julien {
+.gap_logo {
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-evenly;
 }
-
-.fab {
-    color:yellow;
+.fab, .footer_text {
+    color: lightyellow;
+    transition: .4s ease-in-out;
 }
-
-.footer_text {
-    color:lightyellow;
+.fab:hover {
+    color: yellow
 }
