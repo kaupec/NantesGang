@@ -36,7 +36,7 @@
     justify-content: space-evenly;
 }
 
-.fab {
+.fab, .footer_text {
     color: lightyellow;
     transition: .4s ease-in-out;
 }
