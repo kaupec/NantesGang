@@ -57,6 +57,10 @@ h5 {
     color: yellow;
 }
 
+.TopFooter {
+    margin-top: 50px;
+}
+
 
 @media screen and (max-width: 450px) {
     h2 {font-size: 6vw}
