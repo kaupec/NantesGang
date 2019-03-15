@@ -1,7 +1,13 @@
 .logo {
     width: 4em;
 }
-
+.navbar{
+    position:fixed;
+    width:100%;
+}
+body{
+    margin-top: 5em;
+}
 h2 {
     font-style: italic;
     font-weight: 700;
@@ -79,7 +85,6 @@ h3 {
     font-weight: 700;
 }
 
-<<<<<<< HEAD
 /***TOPBUTTON***/
 #myBtn 
 {
@@ -101,7 +106,6 @@ h3 {
 #myBtn:hover 
 {
     background-color: #555;
-=======
 /*TRY TO SET UP A FORM ACTIF */
 
 .error {color: #FF0000;}
@@ -161,5 +165,4 @@ button {
     /* Cette marge supplémentaire représente grosso modo le même espace que celui
        entre les étiquettes et les champs texte */
     margin-left: .5em;
->>>>>>> feature_form
 }

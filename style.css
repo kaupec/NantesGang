@@ -12,7 +12,10 @@ body {
     font-weight: 700;
     color: yellow !important;
 }
-
+.navbar{
+    position:fixed;
+    width:100%;
+}
 .extract_event .title-section {
     margin-top: 600px;
 }
