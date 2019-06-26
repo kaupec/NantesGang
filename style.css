@@ -85,3 +85,88 @@ body {
 {
     background-color: #555;
 }
+
+body {margin:0}
+
+.welcome-section {
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    z-index: 1030;
+    width: 100vw;
+}
+/* g {width:50%;height: 50%} */
+.st0{fill:none;}
+.st1{fill:#fff;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+
+.content-hidden {
+    position: absolute;
+    top:45%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    overflow: hidden;
+    width: 100vw;
+    height: 100%;
+}
+.wrapper {
+    position: absolute;
+    display: none;
+    width:100vw;
+    height: 100%;
+}
+
+path {
+    stroke:#fff;
+    fill: #fff;
+    stroke-dasharray: 1880;
+    opacity: 1;
+    animation: animate 3s cubic-bezier(0,.31,1,-0.21); 
+}
+.enter-button {
+    position: absolute;
+    font-family: 'PT Sans', sans-serif;
+    width:25vh;
+    /* margin-left: auto;
+    margin-right: auto; */
+    display: block;
+    border: yellow solid thin;
+    text-align: center;
+    font-size: 3.2vh;
+    text-decoration: none;
+    color: yellow;
+    opacity: 1;
+    margin-top: 40vw;
+    transition: all 1s ease 3s;
+}
+
+.content-hidden .enter-button { opacity: 0;transform: translate3d(0,-30px,0)}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        fill:none;
+        stroke-dashoffset: 1880;
+    }
+    40% {
+        opacity: 1;
+        fill:none;
+        stroke-dashoffset: 1880;
+    }
+    93% {
+        fill: rgba(255, 255, 255, 0)
+    }
+    100% {
+        opacity: 1;
+        fill: white;
+        stroke-dashoffset: 0;
+    }
+}
+
+/* @font-face {
+    font-family: titleFont;
+    src: url('https://fonts.googleapis.com/css?family=PT+Sans');
+} */
