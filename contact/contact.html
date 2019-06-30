@@ -11,83 +11,6 @@
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
 </head>
 
-<?php
-
-$name="";
-
-// define variables and set to empty values
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (empty($_POST["user_name"])) {
-        $nameErr = "Name is required";
-
-    } else {
-        $name = test_input($_POST["user_name"]);
-
-// check if name only contains letters and whitespace
-        if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
-            $nameErr = "Only letters and white space allowed";
-
-        }
-    }
-    if (empty($_POST["user_first_name"])) {
-        $firstNameErr = "First name is required";
-
-    } else {
-        $firstName = test_input($_POST["user_first_name"]);
-
-// check if name only contains letters and whitespace
-        if (!preg_match("/^[a-zA-Z ]*$/",$firstName)) {
-            $firstNameErr = "Only letters and white space allowed";
-
-        }
-    }
-    if (empty($_POST["user_email"])) {
-        $emailErr = "Email is required";
-
-    } else {
-        $email = test_input($_POST["user_email"]);
-
-// check if e-mail address is well-formed
-        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            $emailErr = "Invalid email format";
-
-        }
-    }
-    if (empty($_POST["user_number"])) {
-        $numberErr = "Number is required";
-
-    } else {
-        $number = test_input($_POST["user_number"]);
-
-// check if number  is well
-        if (!preg_match("/^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$/",$number)) {
-            $numberErr = "Invalid number format";
-
-        }
-    }
-    if (empty($_POST["user_message"])) {
-        $commentErr = "Comment is required";
-
-    }else {
-        $comment = test_input($_POST["user_message"]);
-
-// check if name only contains letters and whitespace
-        if (!preg_match("/^[a-zA-Z ]*$/", $comment)) {
-            $commentErr = "Only letters and white space allowed";
-        }
-    }
-
-}
-
-function test_input($data) {
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
-}
-?>
-
 <body class="bg">
 	<header>
 		<nav class="navbar navbar-expand-lg bg-dark navbar sticky-top">
@@ -146,46 +69,22 @@ function test_input($data) {
 		</div>
         <div class="row">
             <div class="col-lg-8 col-10 offset-lg-2 offset-1">
-                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+                <form action="" method="post">
                     <div>
                         <label for="name">Nom :</label>
                         <input type="text" id="name" name="user_name" class="form-control mt-2" placeholder="Canon ou Nikon ?" required>
-                        <span class="error">
-                            <?php if (isset($nameErr)){
-                                echo $nameErr;
-                            }
-                            ?>
-                        </span>
                     </div>
                     <div>
                         <label for="firstName">Prénom :</label>
                         <input type="text" id="firstName" name="user_first_name" placeholder="Nikon ou Canon ?" class="form-control mt-2" required>
-                        <span class="error">
-                            <?php if (isset($firstNameErr)){
-                                echo $firstNameErr;
-                            }
-                            ?>
-                        </span>
                     </div>
                     <div>
                         <label for="mail">E-mail :</label>
                         <input type="email" id="mail" name="user_email" placeholder="Adresse Couriel ?" class="form-control mt-2" required>
-                        <span class="error">
-                            <?php if (isset($emailErr)){
-                                echo $emailErr;
-                            }
-                            ?>
-                        </span>
                     </div>
                     <div>
                         <label for="tel">Tel :</label>
                         <input type="tel" id="tel" name="user_number" placeholder="HE l'artist, ta 1 06 ?" class="form-control mt-2" required>
-                        <span class="error">
-                            <?php if (isset($numberErr)){
-                                echo $numberErr;
-                            }
-                            ?>
-                        </span>
                     </div>
                     <div>
                         <label for="subject">Sujet :</label>
@@ -202,21 +101,10 @@ function test_input($data) {
                     <div>
                         <label for="msg">Message :</label>
                         <textarea id="msg" name="user_message" placeholder="Nous t'écoutons... soit bref par contre...On est que 4" required></textarea>
-                        <span class="error">
-                            <?php if (isset($commentErr)){
-                                echo $commentErr;
-                            }
-                            ?>
-                        </span>
                     </div>
                     <div class="button">
                         <button class="btn btn-dark" type="submit">Bah vasy envoie, allez !</button>
                     </div>
-                    <?php
-                    if ( isset($name) and isset($firstName) and isset($email) and isset($number) and isset($comment)) {
-                        echo ' Bravo, tes informations sont entre de bonnes mains AHAHA';
-                    }
-                    ?>
                 </form>
             </div>
         </div>
